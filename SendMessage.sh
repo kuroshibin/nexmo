@@ -15,7 +15,7 @@ read -p 'How many Send Message:' userval3
 for ((n=0;n<$userval3;n++))
 do
 {
-curl -X POST  https://rest.nexmo.com/sms/json \
+curl -X POST https://rest.nexmo.com/sms/json \
 -d api_key=$line1 \
 -d api_secret=$line2 \
 -d to=$userval \
